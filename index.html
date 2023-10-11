@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ele.css">
+    <title>Electricity Bill </title>
+</head>
+<body>
+    <div class="main">
+    <h3>
+        Electricity Bill 
+    </h3>
+    
+        <form action="" onsubmit="calling()">
+    <table>
+        <tbody>
+           <!-- RR no -->
+            <tr>
+                <td>
+                    Enter RR Number
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter your RR Number" id="rr" required>
+                </td>
+            </tr>
+            <tr>   
+                <!-- name -->
+                <td>
+                    Customer Name
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter your name" id="name" required>
+                </td>
+            </tr>
+            <tr>
+                <!-- address -->
+                <td>
+                    Address
+                </td>
+                <td>
+                    <textarea name="address" id="address" cols="30" rows="10" required> Enter your address</textarea>
+                </td>
+            </tr>
+            <!-- bill reading date -->
+            <tr>
+                <td>
+                    Bill
+                     Reading Date
+                </td>
+                <td>
+                    <input type="date" name="brd" id="brd" required>
+                </td>
+            </tr>
+            <!-- old meter reading -->
+            <tr>
+                <td>
+                    Enter Old Meter Reading
+                </td>
+                <td>
+                   <input type="number" id="omr" placeholder="Enter old reading" required>
+                </td>
+            </tr>
+            <!-- current meter reading -->
+            <tr>
+                <td>
+                    Enter current meter reading
+                </td>
+                <td>
+                    <input type="number" id="cmr" placeholder="Enter current reading" required>
+                </td>
+            </tr>
+            <!-- Arrears -->
+            <tr>
+            <td>
+                Enter <br> Arrears if <br> any
+    
+            </td>
+            <td>
+                <input type="number" id="arr"  value="0" >
+            </td>
+        </tr>
+        <!-- submit clear -->
+            <tr>
+                <td>
+                    <input type="reset" value="Clear">
+                </td>
+                <td>
+                    <input type="submit" value="submit">
+                </td>
+            </tr>
+           
+        </tbody>
+      
+    </table>
+</form>
+
+<p id="answer"> </p>
+    
+<script src="./ele.js"></script>
+</div>
+</body>
+</html>
